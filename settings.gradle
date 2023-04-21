@@ -1,0 +1,6 @@
+rootProject.name = 'PaperRockScissors'
+include 'src'
+include 'src:main'
+findProject(':src:main')?.name = 'main'
+include 'src:test'
+findProject(':src:test')?.name = 'test'
